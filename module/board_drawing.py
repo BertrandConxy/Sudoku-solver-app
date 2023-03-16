@@ -24,3 +24,7 @@ def draw(pygame, screen, dif, font1, grid):
 			thick = 1
 		pygame.draw.line(screen, (0, 0, 0), (0, i * dif), (500, i * dif), thick)
 		pygame.draw.line(screen, (0, 0, 0), (i * dif, 0), (i * dif, 500), thick)
+
+def draw_val(val, font, screen,x,y, dif):
+	text1 = font.render(str(val), 1, (0, 0, 0))
+	screen.blit(text1, (x * dif + 18, y * dif + 10))

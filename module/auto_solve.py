@@ -1,8 +1,6 @@
-# import pygame
 from module.check_valid import valid
-from module.board_drawing import draw, draw_box
 
-def solve(pygame, screen, grid, i, j, dif, font):
+def solve(grid, i, j):
 	
 	while grid[i][j]!= 0:
 		if i<8:
@@ -21,8 +19,8 @@ def solve(pygame, screen, grid, i, j, dif, font):
 			y = j
 			# white color background\
 			screen.fill((255, 255, 255))
-			draw(pygame, screen, dif, font, grid)
-			draw_box(pygame, screen, i, j, dif)
+			draw()
+			draw_box()
 			pygame.display.update()
 			pygame.time.delay(20)
 			if solve(grid, i, j)== 1:
@@ -32,8 +30,8 @@ def solve(pygame, screen, grid, i, j, dif, font):
 			# white color background\
 			screen.fill((255, 255, 255))
 		
-			draw(pygame, screen, dif, font, grid)
-			draw_box(pygame, screen, i, j, dif)
+			draw()
+			draw_box()
 			pygame.display.update()
 			pygame.time.delay(50)
 	return False
