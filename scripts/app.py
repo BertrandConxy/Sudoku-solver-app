@@ -118,9 +118,10 @@ while run:
 		raise_error1(screen, font1)
 	if rs == 1:
 		result(screen, font1) # Display options when solved
-	draw(pygame, screen, dif, font1, grid) # Draw required lines for making Sudoku grid
 	if flag1 == 1:
 		draw_box(pygame, screen, x, y, dif)	# Highlight the cell selected
+
+	draw(pygame, screen, dif, font1, grid) # Draw required lines for making Sudoku grid
 	instruction(screen, font2)
 
 	# Update window

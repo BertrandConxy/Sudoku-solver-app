@@ -4,8 +4,7 @@ def draw_box(pygame, screen, x, y, dif):
 		pygame.draw.line(screen, (89, 252, 116), ( (x + i)* dif, y * dif ), ((x + i) * dif, y * dif + dif), 7)
 		
 def draw(pygame, screen, dif, font1, grid):
-	# Draw the lines
-		
+	# Draw the lines	
 	for i in range (9):
 		for j in range (9):
 			if grid[i][j]!= 0:
