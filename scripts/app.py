@@ -9,7 +9,7 @@ from modules.auto_solve import solve
 # Load test fonts for future use
 pygame.font.init()
 font1 = pygame.font.SysFont("comicsans", 25)
-font2 = pygame.font.SysFont("comicsans", 15)
+font2 = pygame.font.SysFont("comicsans", 14)
 
 screen = pygame.display.set_mode((500, 600))
 pygame.display.set_caption("SUDOKU GAME WITH AUTO-SOLVER")
