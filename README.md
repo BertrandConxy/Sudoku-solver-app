@@ -1,26 +1,94 @@
-#### Sudoku Solver
+![](https://img.shields.io/badge/Sudoku-blue)
 
-## Introduction
+# SUDOKU GAME(With Auto-solve)
 
-Sudoku is a logic-based, combinatorial number-placement puzzle. In classic Sudoku, the objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 subgrids that compose the grid contain all of the digits from 1 to 9.
+> Sudoku Game is a logic-based, combinatorial number-placement puzzle. It is 9 * 9 Grid and the objective is to fill numbers from 0 to 9 in 3 * 3 sub-grids. In addition to this, there is an option to let the program solves sudoku itself. It uses Pygame, python library used for basic desktop games. The program runs in nodejs environment.
 
+<br/>
 
-## How to run
+![image](https://user-images.githubusercontent.com/90222110/225345208-1a3cf0c2-b507-49ab-b1f5-b5a03f47225b.png)
 
-Use the following commands to get started with the project
+<br/>
 
-```js
-git clone https://github.com/chanceDira/sudoku-solver.git
-cd sudoku-solver
-npm install
-npm run dev
-```
+Additional description about the project and its features.
 
-## Technologies
+## Built With
 
-To successfully navigate the codebase of the project, you will need undertanding of the following technologies that are being used to develop this application:
+- Major languages (JavaScript, Python)
+- Technologies/tools used
 
-- NodeJs
+  ```bash
+  - Nodejs
+  - Python
+  - Git(version control)
+
+  ```
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- A text editor(preferably Visual Studio Code)
+- Nodejs
 - Python
 
+#### Libraries
+- pygame
+- unittest
 
+### Install
+
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
+- [Python](https://python.org)
+
+#### Clone this repository
+
+```bash
+$ git clone https://github.com/mugishasam123/Sudoku-solver-app
+.git
+$ cd Sudoku-solver-app
+```
+
+#### Run project
+
+```bash
+$ npm install
+$ npm run dev
+```
+
+#### Run Tests
+
+```bash
+$ npm run test
+```
+
+<br>
+
+## Authors
+
+👤 ** Mugisha Samuel**
+
+- GitHub: [mugishasamuel](https://github.com/mugishasam123)
+- LinkedIn: [mugishasamuel](https://www.linkedin.com/in/mugisha-samuel-55a905208/)
+- Twitter: [mugishasamuel](https://twitter.com/mugishasamuel42/)
+
+<br>
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mugishasam123/Sudoku-solver-app/issues).
+
+<br>
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
