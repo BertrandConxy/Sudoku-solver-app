@@ -40,7 +40,6 @@ grid =[
 [0, 4, 9, 2, 0, 6, 0, 0, 7]
 ]
 
-
 # The loop thats keep the window running
 while run:	
 	screen.fill((255, 255, 255)) # White color background
@@ -130,4 +129,3 @@ while run:
 
 # Quit pygame window
 pygame.quit()	
-	
