@@ -99,7 +99,7 @@ while run:
 					[0, 4, 9, 2, 0, 6, 0, 0, 7]
 				]
 	if flag2 == 1:
-		if solve(grid, 0, 0, pygame, screen, draw, font1, dif, draw_box)== False:
+		if solve(grid, 0, 0, pygame, screen, draw, font1, dif, draw_box, valid)== False:
 			error = 1
 		else:
 			rs = 1

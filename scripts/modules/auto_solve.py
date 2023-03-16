@@ -1,6 +1,4 @@
-from modules.check_valid import valid
-
-def solve(grid, i, j, pygame, screen, draw, font, dif, draw_box):
+def solve(grid, i, j, pygame, screen, draw, font, dif, draw_box, valid):
 	
 	while grid[i][j]!= 0:
 		if i<8:
@@ -23,7 +21,7 @@ def solve(grid, i, j, pygame, screen, draw, font, dif, draw_box):
 			draw_box(pygame, screen, x, y, dif) # Highlight the cell selected
 			pygame.display.update()
 			pygame.time.delay(20)
-			if solve(grid, i, j, pygame, screen, draw, font, dif, draw_box)== 1:
+			if solve(grid, i, j, pygame, screen, draw, font, dif, draw_box, valid)== 1:
 				return True
 			else:
 				grid[i][j]= 0
