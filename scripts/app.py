@@ -1,10 +1,10 @@
 import pygame
-from module.check_valid import valid
-from module.raise_error import raise_error1, raise_error2
-from module.instructions import instruction, result
-from module.board_drawing import draw, draw_box, draw_val
-from module.track_cord import get_cord
-from module.auto_solve import solve
+from modules.check_valid import valid
+from modules.raise_error import raise_error1, raise_error2
+from modules.instructions import instruction, result
+from modules.board_drawing import draw, draw_box, draw_val
+from modules.track_cord import get_cord
+from modules.auto_solve import solve
 
 # Load test fonts for future use
 pygame.font.init()
@@ -12,8 +12,8 @@ font1 = pygame.font.SysFont("comicsans", 25)
 font2 = pygame.font.SysFont("comicsans", 15)
 
 screen = pygame.display.set_mode((500, 600))
-pygame.display.set_caption("SUDOKU SOLVER USING BACKTRACKING")
-img = pygame.image.load('sudoku.png')
+pygame.display.set_caption("SUDOKU GAME WITH AUTO-SOLVER")
+img = pygame.image.load('./assets/game-icon.png')
 pygame.display.set_icon(img)
 
 # Global variables
@@ -42,8 +42,7 @@ grid =[
 
 # The loop thats keep the window running
 while run:	
-	screen.fill((255, 255, 255)) # White color background
-	
+	screen.fill((255, 255, 255)) # White color background	
 	for event in pygame.event.get(): # Loop through the events stored in event.get()
 		if event.type == pygame.QUIT:
 			run = False

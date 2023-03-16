@@ -1,4 +1,4 @@
-from module.check_valid import valid
+from modules.check_valid import valid
 
 def solve(grid, i, j, pygame, screen, draw, font, dif, draw_box):
 	
