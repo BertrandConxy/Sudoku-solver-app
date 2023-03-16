@@ -1,6 +1,6 @@
 from module.check_valid import valid
 
-def solve(grid, i, j):
+def solve(grid, i, j, pygame, screen, draw, font, dif, draw_box):
 	
 	while grid[i][j]!= 0:
 		if i<8:
@@ -19,19 +19,19 @@ def solve(grid, i, j):
 			y = j
 			# white color background\
 			screen.fill((255, 255, 255))
-			draw()
-			draw_box()
+			draw(pygame, screen, dif, font, grid) # Draw required lines for making Sudoku grid
+			draw_box(pygame, screen, x, y, dif) # Highlight the cell selected
 			pygame.display.update()
 			pygame.time.delay(20)
-			if solve(grid, i, j)== 1:
+			if solve(grid, i, j, pygame, screen, draw, font, dif, draw_box)== 1:
 				return True
 			else:
 				grid[i][j]= 0
 			# white color background\
 			screen.fill((255, 255, 255))
 		
-			draw()
-			draw_box()
+			draw(pygame, screen, dif, font, grid) # Draw required lines for making Sudoku grid
+			draw_box(pygame, screen, x, y, dif) # Highlight the cell selected
 			pygame.display.update()
 			pygame.time.delay(50)
 	return False
